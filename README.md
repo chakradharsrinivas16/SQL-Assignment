@@ -55,9 +55,10 @@ The procedure performs the following actions upon execution :
 - Returns the department name along with the count of male and female employees in each department, with a default value of "Not Assigned" for departments that have no assigned employees.
 - The results are ordered by the "Department" column in ascending order.
 #### Functions and Statements used -
-  1. IFNULL - The "IFNULL" function is used to handle cases where the "Department" column has a NULL value. The "UPPER" function is used to convert the values in the "Gender" column to upper case to ensure that the case-insensitive comparison between the values and the hardcoded strings "MALE" and "FEMALE" works correctly.
-  2. CASE WHEN - The "CASE WHEN" statement is used to conditionally count the number of occurrences of "Male" and "Female" in the "Gender" column.
-  3. DELIMITER - The "DELIMITER" statement is used to change the default SQL statement delimiter, which is a semicolon, to the "&&" symbol. This is necessary because the procedure body contains semicolons, which would otherwise cause issues with execution.
+  1. IFNULL - The "IFNULL" function is used to handle cases where the "Department" column has a NULL value. 
+  2. UPPER - The "UPPER" function is used to convert the values in the "Gender" column to upper case to ensure that the case-insensitive comparison between the values and the hardcoded strings "MALE" and "FEMALE" works correctly.
+  3. CASE WHEN - The "CASE WHEN" statement is used to conditionally count the number of occurrences of "Male" and "Female" in the "Gender" column.
+  4. DELIMITER - The "DELIMITER" statement is used to change the default SQL statement delimiter, which is a semicolon, to the "&&" symbol. This is necessary because the procedure body contains semicolons, which would otherwise cause issues with execution.
  ```
  DELIMITER &&  
 CREATE PROCEDURE get_num_of_male_and_female ()
@@ -141,9 +142,9 @@ The procedure performs the following actions upon execution:
 
 #### Functions and Statements used -
 
-1. Greatest -  The "greatest" function is used to determine the maximum value from the columns "Jan", "Feb", and "March". The "field" function is used to determine the position of the maximum value in the list.
-
-2. DELIMITER - The "DELIMITER" statement is used to change the default SQL statement delimiter, which is a semicolon, to the "&&" symbol. This is necessary because the procedure body contains semicolons, which would otherwise cause issues with execution.
+1. Greatest -  The "greatest" function is used to determine the maximum value from the columns "Jan", "Feb", and "March". 
+2. Field - The "field" function is used to determine the position of the maximum value in the list.
+3. DELIMITER - The "DELIMITER" statement is used to change the default SQL statement delimiter, which is a semicolon, to the "&&" symbol. This is necessary because the procedure body contains semicolons, which would otherwise cause issues with execution.
 
 ```
 DELIMITER &&  

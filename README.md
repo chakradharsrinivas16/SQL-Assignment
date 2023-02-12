@@ -15,7 +15,7 @@ The table has four columns:
 The "check" constraint is used to enforce data integrity by preventing invalid entries in the "Gender" column. The constraint specifies that only the values "Male" and "Female" are allowed in the "Gender" column.
 
 ```
-create table employees (
+create table if not exists employees (
   emp_id integer(4) not null unique, 
   -- As employee id cannot be null and need to be unique
   emp_name varchar(30), 
@@ -99,7 +99,7 @@ The table has four columns:
 The "check" constraint is used to enforce data integrity by preventing invalid entries in the salary columns. The constraint specifies that the salary in all three months (Jan, Feb, and March) must be greater than or equal to 0.
 
 ```
-create table employeesalaries (
+create table if not exists employeesalaries (
   emp_name varchar(30) not null, 
   -- Name cannot be null
   Jan Float(10, 2) Not null default 0, 
@@ -186,7 +186,7 @@ The table has two columns:
 This table can be used to store information about test scores for candidates, where each candidate is identified by a unique candidate ID and their marks are stored in the "marks" column.
 
 ```
-create table test (
+create table if not exists test (
   candidate_id integer(4) not null unique, 
   -- As candidate id cannot be null and need to be unique
   marks float(10, 2) default 0
@@ -250,7 +250,7 @@ The table has two columns:
 This table can be used to store information about the email addresses of candidates, where each candidate is identified by a unique candidate ID and their email addresses are stored in the "mail" column.
 
 ```
-create table mailids (
+create table if not exists mailids (
   candidate_id integer(4) not null, 
   -- As candidate id cannot be null and need to be unique
   mail varchar(30) not null

@@ -81,6 +81,7 @@ DELIMITER ;
  ```
 
 #### Test run -
+![image](https://user-images.githubusercontent.com/123494344/218332255-2dbba1e3-6927-4fd0-8dcf-b10e60a83c93.png)
 
 
 ### Question - 2
@@ -170,8 +171,7 @@ END &&
 DELIMITER ;  
 ```
 #### Test run -
-[Uploading Screenshot 2023-02-13 at 12.40.42 AM…]()
-
+![image](https://user-images.githubusercontent.com/123494344/218332280-76b2c40b-a49b-4ea3-9ba6-85947acd1d84.png)
 
 ### Question - 3
 #### Table Creation - 
@@ -235,6 +235,7 @@ END &&
 DELIMITER ; 
 ```
 #### Test run -
+![image](https://user-images.githubusercontent.com/123494344/218332305-78c04e23-568e-4f8d-841a-5061b6558c55.png)
 
 ### Question - 4
 
@@ -307,6 +308,7 @@ END &&
 DELIMITER ;  
 ```
 #### Test run -
+![image](https://user-images.githubusercontent.com/123494344/218332320-43d7766b-a899-4302-8805-b567d8f43b3a.png)
 
 
 As we said earlier we have created procedure for every question and as procedure calls are quick and efficient as stored procedures are compiled once and stored in executable form.Hence the response is quick. The executable code is automatically cached, hence lowers the memory requirements. Since the same piece of code is used again and again so, it results in higher productivity. Two or more sql statements can grouped and can be ran in a single call(used in Question - 4).

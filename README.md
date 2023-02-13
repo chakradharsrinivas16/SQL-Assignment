@@ -309,8 +309,7 @@ END &&
 DELIMITER ;  
 ```
 #### Test run -
-![image](https://user-images.githubusercontent.com/123494344/218332320-43d7766b-a899-4302-8805-b567d8f43b3a.png)
-
+![image](https://user-images.githubusercontent.com/123494344/218390935-6a718b60-1eac-40e0-9a3a-71fdca2151f7.png)
 
 As we said earlier we have created procedure for every question and as procedure calls are quick and efficient as stored procedures are compiled once and stored in executable form.Hence the response is quick. The executable code is automatically cached, hence lowers the memory requirements. Since the same piece of code is used again and again so, it results in higher productivity. Two or more sql statements can grouped and can be ran in a single call(used in Question - 4).
 

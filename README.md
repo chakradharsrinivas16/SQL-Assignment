@@ -224,10 +224,10 @@ BEGIN
 SELECT 
   Marks, 
   dense_rank() OVER (
-    order by 
-      marks desc
-  ) as 'Rank', 
-  GROUP_CONCAT(Candidate_id) as Candidate_id 
+    ORDER BY 
+      marks DESC
+  ) AS 'Rank', 
+  GROUP_CONCAT(Candidate_id) AS Candidate_id 
 FROM 
   test 
 GROUP BY 
